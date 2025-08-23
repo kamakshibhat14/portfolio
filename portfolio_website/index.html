@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s, transform 0.7s;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: none;
+        }
+    </style>
+</head>
+<body data-theme="dark">
+    <header>
+        <nav>
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certification</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+        <h2>Hi, I'm P Kamakshi Bhat</h2>
+        <p>A Web Developer</p>
+        <div class="social-links">
+            <a href="https://github.com/kamakshibhat14" class="social"><i class="fab fa-github"></i></a>
+            <a href="www.linkedin.com/in/pkamakshibhat" class="social"><i class="fab fa-linkedin"></i></a>
+            <!-- <a href="#" class="social"><i class="fab fa-twitter"></i></a> -->
+            <a class="resume" href="resume.pdf" download>Download Resume</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Aspiring full-stack web developer with hands-on experience in Spring Boot, React.js, Node.js, and MySQL. Passionate about building scalable, secure, and people-centered solutions. Eager to contribute to real-world software projects with strong problem-solving and collaborative skills.</p>
+    </section>
+
+    <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-carousel-wrapper">
+        <div class="skills-carousel">
+            <div class="skill-card fade-in">
+                <img src="images/html.png" alt="HTML" class="skill-img" />
+                <span>HTML</span>
+            </div>
+            <div class="skill-card fade-in">
+                <img src="images/css.png" alt="CSS" class="skill-img" />
+                <span>CSS</span>
+            </div>
+            <div class="skill-card fade-in">
+                <img src="images/js.png" alt="JavaScript" class="skill-img" />
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-card fade-in">
+                <img src="images/react.png" alt="React" class="skill-img" />
+                <span>React</span>
+            </div>
+            <div class="skill-card fade-in">
+                <img src="images/mongodb.png" alt="MongoDB" class="skill-img" />
+                <span>MongoDB</span>
+            </div>
+            <div class="skill-card fade-in">
+                <img src="images/node.png" alt="NodeJS" class="skill-img" />
+                <span>Node Js</span>
+            </div>
+            <!-- Add more skill cards as needed -->
+        </div>
+    </div>
+</section>
+
+    <section id="projects">
+                <h2>Projects</h2>
+                <p>Here are some of my recent works:</p>
+                <div class="projects-carousel-wrapper">
+                    <div class="projects-carousel">
+                        <a class="project-card fade-in" href="https://github.com/kamakshibhat14/PRODIGY_FS_01" target="_blank" rel="noopener">
+                            <img src="images/auth.png" alt="Authentication System" class="project-img">
+                            <h3>Secure Authentication System</h3>
+                            <p>Authentication System using MERN Stack</p>
+                        </a>
+                        <a class="project-card fade-in" href="https://github.com/kamakshibhat14/quiz1" target="_blank" rel="noopener">
+                            <img src="images/voice.png" alt="quiz" class="project-img">
+                            <h3>Voice-Interactive Quiz</h3>
+                            <p>A web application that allows users to take quizzes using voice commands.</p>
+                        </a>
+                        <!-- <a class="project-card fade-in" href="https://github.com/shreyask253/blog-platform" target="_blank" rel="noopener">
+                            <img src="images/profile.jpg" alt="Blog Platform" class="project-img">
+                            <h3>Blog Platform</h3>
+                            <p>Simple blog platform built with React and Node.js.</p>
+                        </a> -->
+                        <a class="project-card fade-in" href="https://github.com/kamakshibhat14/quizproject" target="_blank" rel="noopener">
+                            <img src="images/voive quiz.jpg" alt="E-Commerce Platform" class="project-img">
+                            <h3>Vocal Genius- Online Voice Enabled Quiz Platform</h3>
+                            <p>Created a voice-driven quiz web application presenting audio
+based questions.</p>
+                        </a>
+                        <a class="project-card fade-in" href="https://github.com/kamakshibhat14/Community_Discussion_Board" target="_blank" rel="noopener">
+                            <img src="images/communitiy.png" alt="Flutter" class="project-img">
+                            <h3>Community Dashboard</h3>
+                            <p>A web application for community engagement and resource sharing.</p>
+                        </a>
+                        <a class="project-card fade-in" href="https://github.com/kamakshibhat14/food-rescue-project" target="_blank" rel="noopener">
+                            <img src="images/food.jpg" alt="Food Rescue Project" class="project-img">
+                            <h3>Food Rescue Project</h3>
+                            <p>A web application to connect restaurants with local shelters to donate excess food.</p>
+                        </a>
+                        <!-- Add more project cards as needed -->
+                    </div>
+                </div>
+    </section>
+
+    <section id="education">
+    <h2>Education</h2>
+    <div class="education-cards">
+        <div class="education-card fade-in">
+            <img src="images/nitte.png" alt="NMAMIT Logo" class="education-logo" />
+            <h3>Master of Computer Application</h3>
+            <p>NMAM Institute of Technology, Nitte</p>
+            <p>2024 – 2026</p>
+        </div>
+        <div class="education-card fade-in">
+            <img src="images/govinda.webp" alt="Govinda Dasa College Logo" class="education-logo" />
+            <h3>Bachelor of Computer Application</h3>
+            <p>Govinda Dasa Degree College, Surathkal</p>
+            <p>2021 – 2024</p>
+        </div>
+        <!-- Add more education-card blocks as needed -->
+    </div>
+</section>
+
+<section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certifications-carousel-wrapper">
+        <div class="certifications-carousel">
+            <a class="certification-card fade-in" href="images/research.jpg" target="_blank" rel="noopener">
+                <img src="images/reserach.webp" alt="Research Methodology and Publication (PDF)" class="certification-img">
+                <h3>Research Methodology and Publication</h3>
+                <!-- <p>, 2024</p> -->
+            </a>
+            
+            <a class="certification-card fade-in" href="images/cloud.jpg" target="_blank" rel="noopener">
+                <img src="images/cloud.png" alt="Cloud Computing (PDF)" class="certification-img">
+                <h3>Cloud Computing</h3>
+                <!-- <p>HackerRank, 2023</p> -->
+            </a>
+             <a class="certification-card fade-in" href="images/geeks.jpg" target="_blank" rel="noopener">
+                <img src="images/data.png" alt="Geeks (PDF)" class="certification-img">
+                <h3>Data Science BootCamp</h3>
+                <p>GeeksForGeeks, 2025</p>
+            </a>
+             <a class="certification-card fade-in" href="images/flutter.jpg" target="_blank" rel="noopener">
+                <img src="images/flutter.png" alt="Flutter (PDF)" class="certification-img">
+                <h3>Flutter</h3>
+                <!-- <p>HackerRank, 2023</p> -->
+            </a>
+             <a class="certification-card fade-in" href="images/mern.jpg" target="_blank" rel="noopener">
+                <img src="images/full.jpg" alt="MERN (PDF)" class="certification-img">
+                <h3>Full Stack Development (MERN Stack)</h3>
+                <!-- <p>HackerRank, 2023</p> -->
+            </a>
+            <a class="certification-card fade-in" href="images/digital.jpg" target="_blank" rel="noopener">
+                <img src="images/digital marketing.jpg" alt="MERN (PDF)" class="certification-img">
+                <h3>Digital Marketing</h3>
+                <p>Excel-R, 2025</p>
+            </a>
+             <a class="certification-card fade-in" href="certificate/Certificate (1).pdf" target="_blank" rel="noopener">
+                <img src="images/prodigy.jpg" alt="MERN (PDF)" class="certification-img">
+                <h3>Prodigy Internship</h3>
+                <p>Prodigy, 2025</p>
+            </a>
+
+            
+            <!-- Add more certification cards as needed -->
+        </div>
+    </div>
+</section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xnnzekqa" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="email" name="email" placeholder="Your Email" required><br>
+    <textarea name="message" placeholder="Your Message" required></textarea><br>
+    <button type="submit">Send</button>
+</form>
+    </section>
+
+    
+        <footer>
+                <p>&copy; 2025 P Kamakshi Bhat. All rights reserved.</p>
+        </footer>
+        <script>
+            // Fade-in animation for skill, project, and certification cards
+            function animateOnScroll(selector) {
+                const elements = document.querySelectorAll(selector);
+                const observer = new window.IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.2 });
+                elements.forEach(el => observer.observe(el));
+            }
+            document.addEventListener('DOMContentLoaded', function() {
+                animateOnScroll('.skill-card');
+                animateOnScroll('.project-card');
+                animateOnScroll('.certification-card');
+                animateOnScroll('.education-card'); // <-- Add this line
+                // Scroll certifications carousel to the start (first certificate) on load
+                const certificationsCarousel = document.querySelector('.certifications-carousel');
+                if (certificationsCarousel) {
+                    certificationsCarousel.scrollLeft = 0;
+                }
+            });
+            // Projects carousel drag-to-scroll only
+            const carousel = document.querySelector('.projects-carousel');
+            if (carousel) {
+                let isDown = false;
+                let startX;
+                let scrollLeft;
+                carousel.addEventListener('mousedown', (e) => {
+                    isDown = true;
+                    carousel.classList.add('dragging');
+                    startX = e.pageX - carousel.offsetLeft;
+                    scrollLeft = carousel.scrollLeft;
+                });
+                carousel.addEventListener('mouseleave', () => {
+                    isDown = false;
+                    carousel.classList.remove('dragging');
+                });
+                carousel.addEventListener('mouseup', () => {
+                    isDown = false;
+                    carousel.classList.remove('dragging');
+                });
+                carousel.addEventListener('mousemove', (e) => {
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - carousel.offsetLeft;
+                    const walk = (x - startX) * 1.5; // scroll-fast
+                    carousel.scrollLeft = scrollLeft - walk;
+                });
+            }
+
+    // Skills carousel drag-to-scroll only
+    const skillsCarousel = document.querySelector('.skills-carousel');
+    if (skillsCarousel) {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        skillsCarousel.addEventListener('mousedown', (e) => {
+            isDown = true;
+            skillsCarousel.classList.add('dragging');
+            startX = e.pageX - skillsCarousel.offsetLeft;
+            scrollLeft = skillsCarousel.scrollLeft;
+        });
+        skillsCarousel.addEventListener('mouseleave', () => {
+            isDown = false;
+            skillsCarousel.classList.remove('dragging');
+        });
+        skillsCarousel.addEventListener('mouseup', () => {
+            isDown = false;
+            skillsCarousel.classList.remove('dragging');
+        });
+        skillsCarousel.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - skillsCarousel.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            skillsCarousel.scrollLeft = scrollLeft - walk;
+        });
+    }
+
+    // Certifications carousel drag-to-scroll only
+    const certificationsCarousel = document.querySelector('.certifications-carousel');
+    if (certificationsCarousel) {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        certificationsCarousel.addEventListener('mousedown', (e) => {
+            isDown = true;
+            certificationsCarousel.classList.add('dragging');
+            startX = e.pageX - certificationsCarousel.offsetLeft;
+            scrollLeft = certificationsCarousel.scrollLeft;
+        });
+        certificationsCarousel.addEventListener('mouseleave', () => {
+            isDown = false;
+            certificationsCarousel.classList.remove('dragging');
+        });
+        certificationsCarousel.addEventListener('mouseup', () => {
+            isDown = false;
+            certificationsCarousel.classList.remove('dragging');
+        });
+        certificationsCarousel.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - certificationsCarousel.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            certificationsCarousel.scrollLeft = scrollLeft - walk;
+        });
+    }
+</script>
+</body>
+</html>
