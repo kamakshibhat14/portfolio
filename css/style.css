@@ -569,3 +569,178 @@ form button:hover {
     animation: highlight 1.2s cubic-bezier(0.4,0,0.2,1);
     border: 2px solid #fda085;
 }
+/* Reset & Bootstrap overrides */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(-45deg, #f6d365, #fda085, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Animated background gradient */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Navbar */
+header {
+  background: rgba(17, 17, 17, 0.9);
+  color: #fda085;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fda085;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fda085;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  text-shadow: 0 1px 8px #fda08555;
+}
+
+/* Sections with Bootstrap spacing */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  max-width: 1100px;
+  transition: all 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 28px rgba(253, 160, 133, 0.25);
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Buttons */
+.btn-custom {
+  background: linear-gradient(135deg, #ca3d16, #f6d365);
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-custom:hover {
+  background: linear-gradient(135deg, #f6d365, #e05028);
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(253,160,133,0.4);
+}
+
+/* Profile pic animation */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+  animation: floatPic 4s ease-in-out infinite;
+}
+
+@keyframes floatPic {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Social links */
+.social, .resume {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  background: #2c3e50;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+.social:hover, .resume:hover {
+  background: #fda085;
+  color: #232323;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(253,160,133,0.4);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  border-top: 2px solid #7f5044;
+}
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Dark Mode Support */
+[data-theme="dark"] {
+  background: linear-gradient(-45deg, #232323, #181818, #444, #111);
+  background-size: 400% 400%;
+  animation: gradientBG 18s ease infinite;
+  color: #f1f1f1;
+}
+[data-theme="dark"] section {
+  background: rgba(35, 35, 35, 0.95);
+}
+[data-theme="dark"] .btn-custom {
+  background: linear-gradient(135deg, #444, #111);
+}
